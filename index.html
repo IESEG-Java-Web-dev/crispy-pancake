@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>IESEG Location</h2>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Join<i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#Login">Login</a>
+        <a href="#Sign-Up">Sign-Up</a>
+      </div>
+    </div>
+    <a href="#profil">Profil</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <input type="text" placeholder="Search..">
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Appart 1</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="images/appart1_1.webp" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="images/appart1_2.webp" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="images/appart1_3.webp" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Appart 2</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="images/appart2_1.webp" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/appart2_2.webp" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="images/appart2_3.webp" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Popular Location</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+
+</div>
+
+<script>
+  var slideIndex = [1,1];
+  var slideId = ["mySlides1", "mySlides2"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+  
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+  
+  function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex[no]-1].style.display = "block";  
+  }
+  </script>
+
+</body>
+</html>
