@@ -310,7 +310,6 @@ li {
 }
 
 .title-box-d {
-  padding-bottom: 1.8rem;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -326,7 +325,7 @@ li {
   width: 70px;
   height: 4px;
   background-color: #2eca6a;
-  bottom: 30px;
+  bottom: -3px;
   left: 0;
 }
 
