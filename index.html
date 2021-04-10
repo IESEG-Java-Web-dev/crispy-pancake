@@ -2,10 +2,21 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS File -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icon CSS File -->
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-- CSS global -->
 <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
 
+  <!-- HEADER and NAVBAR -->
 <div class="header">
   <h2>IESEG Location</h2>
   <div class="topnav">
@@ -17,18 +28,24 @@
         <a href="#Sign-Up">Sign-Up</a>
       </div>
     </div>
-    <a href="#profile">Profil</a>
+    <a href="#profile">Profile</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
     <input type="text" placeholder="Search..">
   </div>
 </div>
-
+ <!-- Appartement list -->
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <h2>Appart 1</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <section class="intro-single">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Appartement 1</h1>
+            <span class="color-text-a">59130, Lambersart</span>
+          </div>
+        </div>
+      </section>
       <div class="slideshow-container">
         <div class="mySlides1">
           <img src="images/appart1_1.webp" style="width:100%">
@@ -47,10 +64,20 @@
       </div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <a href="rent_detail.html" class="link-a">Click here to view
+<span class="ion-ios-arrow-forward"></span>
+      </a>
     </div>
+
     <div class="card">
-      <h2>Appart 2</h2>
-      <h5>Title description, Sep 2, 2017</h5>
+      <section class="intro-single">
+      <div class="col-md-12 col-lg-8">
+        <div class="title-single-box">
+          <h1 class="title-single">Appartement 2</h1>
+          <span class="color-text-a">59000, Lille</span>
+        </div>
+      </div>
+    </section>
 <div class="slideshow-container">
   <div class="mySlides2">
     <img src="images/appart2_1.webp" style="width:100%">
@@ -69,18 +96,25 @@
 </div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <a href="rent_detail.html" class="link-a">Click here to view
+        <span class="ion-ios-arrow-forward"></span>
+              </a>
     </div>
-    <div class="pagination">
-      <a href="#">&laquo;</a>
-      <a href="#">1</a>
-      <a class="active" href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">&raquo;</a>
-    </div>
-  </div>
+
+         <!-- Pagination -->
+         <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a class="active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+
+     <!-- Right colum w/ most popular location -->
   <div class="rightcolumn">
     <div class="card">
       <h3>Popular Location</h3>
@@ -91,6 +125,8 @@
   </div>
 </div>
 
+
+       <!-- Footer  -->
 <div class="footer">
   <h2>Footer</h2>
 
