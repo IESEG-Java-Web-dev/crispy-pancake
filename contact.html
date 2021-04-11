@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS File -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icon CSS File -->
+<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-- CSS global -->
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+  <!-- HEADER and NAVBAR -->
+<div class="header">
+  <h2>
+    <img src="images/IESEG-Logo.jpg" height="40px" alt="Logo IESEG">
+    Location
+  </h2>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <div class="subnav">
+      <button class="subnavbtn">Join<i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign-Up</a>
+      </div>
+    </div>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <input type="text" placeholder="Search..">
+  </div>
+</div>
+ <!-- Contact FORM  -->
+
+ <div class="container">
+    <form action="action_page.php">
+        <h2>Contactez-nous</h2><br>
+      <label for="fname">EMail</label>
+      <input type="text" placeholder="Votre adresse mail" name="email"><br>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+       <!-- Footer  -->
+       <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-logo-instagram"></i></a><a href="#"><i class="icon ion-logo-snapchat"></i></a><a href="#"><i class="icon ion-logo-twitter"></i></a><a href="#"><i class="icon ion-logo-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="profile.html">Profile</a></li>
+            </ul>
+            <p class="copyright">Crispy-Pancake © 2021</p>
+        </footer>
+    </div>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
