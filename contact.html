@@ -37,23 +37,23 @@
     <input type="text" placeholder="Search..">
   </div>
 </div>
- <!-- Appartement list -->
-<div class="row" style="margin:0px;">
-  <div class="leftcolumn">
-     <!-- Appartement list 1-->
- <div class="card wrap">
-  <div class="row no-gutters">
-    <h2>Contactez-nous</h2><br>
-    <form action="#" method="post">
-        <input type="text" placeholder="Votre adresse mail" name="email"><br>
-        <input type="text" placeholder="Objet" name="objet"><br>
-        <textarea name="message" cols="100" rows="10" placeholder="Votre message"></textarea><br>
-        <input type="submit" value="Envoyer">
-    </form>
-</div>
-</div>
-      </div>
+ <!-- Contact FORM  -->
 
+ <div class="container">
+    <form action="action_page.php">
+        <h2>Contactez-nous</h2><br>
+      <label for="fname">EMail</label>
+      <input type="text" placeholder="Votre adresse mail" name="email"><br>
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
 
        <!-- Footer  -->
        <div class="footer-basic">
