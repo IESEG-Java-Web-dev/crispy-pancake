@@ -1,7 +1,27 @@
+
+/* CSS Global Style*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 20px;
+    background: white;
+}
+
+h1 h2 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
 }
-
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -27,7 +47,7 @@ color: #fefefe;
 }
 
 /* Style the "active" element to highlight the current page */
-.topnav a.active {
+.topnav .active {
   background-color: rgb(247, 166, 0);
   color: white;
 }
@@ -107,12 +127,6 @@ color: #fefefe;
   }
 }
 
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: white;
-}
 
 /* Header/Blog Title */
 .header {
