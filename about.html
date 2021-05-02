@@ -6,95 +6,153 @@
             About us
         </title>
         <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-        <!-- I know there are 2 css files, they will be merged after  -->
-        <link rel="stylesheet" type="text/css" href="css/about.css">
+        <!-- All the css has been merged into the main global css  -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/global.css">
     </head>
-    <body>
 
+    <body>
         <!-- Same interface as index -->
         <div class="header">
           <div>
             <img src="images/IESEG-Logo.jpg" height="40px" alt="Logo IESEG">
             <h2>Location</h2>
-        </div>
-            <div class="topnav">
-              <a href="index.html">Home</a>
-              <div class="subnav">
-                <button class="subnavbtn">Join<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                  <a href="login.html">Login</a>
-                  <a href="signup.html">Sign-Up</a>
-                </div>
+          </div>
+          <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <div class="subnav">
+              <button class="subnavbtn">Join<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign-Up</a>
               </div>
-              <a href="profile.html">Profile</a>
-              <a class="active" href="about.html">About</a>
-              <a href="contact.html">Contact</a>
-              <a href="add_rent.html">Add a rental</a>
-              <input type="text" placeholder="Search..">
             </div>
+            <a href="profile.html">Profile</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="add_rent.html">Add a rental</a>
+            <input type="text" placeholder="Search..">
+          </div>
         </div>
             <!-- Beginning of the about section -->
         <div class="about-section">
-            <h1>About Us</h1>
+            <h1>Our team</h1>
             <p>We are 4 MIS students who want to make your life easier !</p>
-            <p>Resize the browser window to see that this page is responsive by the way.</p>
           </div>
+          <br>
           <!-- Profile of Enzo -->
-          <h2 style="text-align:center">Our Team</h2>
           <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images\enzo.PNG" alt="Jane" style="width:100%">
-                <div class="container">
-                  <h2>Jane Doe</h2>
-                  <p class="title">CEO & Founder</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>jane@example.com</p>
-                  <p><button class="button">Contact</button></p>
+            <div class="columnabout">
+              <div class="cardabout">
+                <img src="images\enzo.PNG" alt="Enzo" style="width:100%">
+                <div class="containerabout">
+                  <h2>Enzo Collet</h2>
+                  <p class="titleabout">CO-founder</p>
+                  <p>Simple, elegant, his name is Enzo, Enzo Collet.</p>
+                  <p>enzo.collet@ieseg.fr</p>
+                  <p><button id="Enzo" class="buttonabout">Let's connect</button></p>
+                  <script type="text/javascript">
+                    document.getElementById("Enzo").onclick = function () {
+                        location.href = "https://www.linkedin.com/in/enzo-collet/";
+                    };
+                  </script>
                 </div>
               </div>
             </div>
           <!-- Profile of Ambroise-->
-            <div class="column">
-              <div class="card">
-                <img src="images\ambroise.PNG" alt="Mike" style="width:100%">
-                <div class="container">
-                  <h2>Mike Ross</h2>
-                  <p class="title">Art Director</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>mike@example.com</p>
-                  <p><button class="button">Contact</button></p>
+            <div class="columnabout">
+              <div class="cardabout">
+                <img src="images\ambroise.PNG" alt="Ambroise" style="width:100%">
+                <div class="containerabout">
+                  <h2>Ambroise Lebas</h2>
+                  <p class="titleabout">CO-founder</p>
+                  <p>El crackito of the group, the one and only Ambroise Lebas.</p>
+                  <p>ambroise.lebas@ieseg.fr</p>
+                  <p><button id="Ambroise" class="buttonabout">Let's connect</button></p>
+                  <script type="text/javascript">
+                    document.getElementById("Ambroise").onclick = function () {
+                        location.href = "https://www.linkedin.com/in/ambroise-lebas/";
+                    };
+                  </script>
+                  
                 </div>
               </div>
             </div>
           <!-- Profile of William -->
-            <div class="column">
-              <div class="card">
-                <img src="images\william.JPG" alt="John" style="width:100%">
-                <div class="container">
-                  <h2>John Doe</h2>
-                  <p class="title">Designer</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>john@example.com</p>
-                  <p><button class="button">Contact</button></p>
+            <div class="columnabout">
+              <div class="cardabout">
+                <img src="images\william.JPG" alt="William" style="width:100%">
+                <div class="containerabout">
+                  <h2>William Chanaud</h2>
+                  <p class="titleabout">CO-founder</p>
+                  <p>Nice profile picture taken in Akihabara, Tokyo.</p>
+                  <p>william.chanauddelestang@ieseg.fr</p>
+                  <p><button id="William" class="buttonabout">Let's connect</button></p>
+                  <script type="text/javascript">
+                    document.getElementById("William").onclick = function () {
+                        location.href = "https://www.linkedin.com/in/william-chanaud-de-lestang/";
+                    };
+                  </script>
+                </div>
+              </div>
+            </div>
+
+            <!-- Community manager -->
+            <div class="columnabout">
+              <div class="cardabout">
+                <img src="images\girl.jpg" alt="Girl" style="width:100%">
+                <div class="containerabout">
+                  <h2>Community manager</h2>
+                  <p class="titleabout">Currently recruiting</p>
+                  <p>Interested in joining the adventure ?</p>
+                  <p>Contact us here </p>
+                  <p><button id="recruiting" class="buttonabout">Contact</button></p>
+                  <script type="text/javascript">
+                    document.getElementById("recruiting").onclick = function () {
+                        location.href = "contact.html";
+                    };
+                  </script>
                 </div>
               </div>
             </div>
 
             <!-- Profile of Quentin -->
-            <div class="column">
-                <div class="card">
-                  <img src="images\quentin.JPG" alt="John" style="width:100%">
-                  <div class="container">
-                    <h2>John Doe</h2>
-                    <p class="title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>john@example.com</p>
-                    <p><button class="button">Contact</button></p>
+            <div class="columnabout">
+                <div class="cardabout">
+                  <img src="images\quentin.JPG" alt="Quentin" style="width:100%">
+                  <div class="containerabout">
+                    <h2>Quentin Blanco</h2>
+                    <p class="titleabout">Co-founder</p>
+                    <p>Beautiful smile, fantastic moustache.</p>
+                    <p>quentin.blanco@ieseg.fr</p>
+                    <p><button id="Quentin" class="buttonabout">Let's connect</button></p>
+                  <script type="text/javascript">
+                    document.getElementById("Quentin").onclick = function () {
+                        location.href = "https://www.linkedin.com/in/quentinblanco/";
+                    };
+                  </script>
                   </div>
                 </div>
               </div>
+
+            <!-- Agent immobilier -->
+            <div class="columnabout">
+              <div class="cardabout">
+                <img src="images\boy.png" alt="boy" style="width:100%">
+                <div class="containerabout">
+                  <h2>Real estate agent</h2>
+                  <p class="titleabout">Currently recruiting</p>
+                  <p>Interested in joining the adventure ?</p>
+                  <p>Contact us here</p>
+                  <p><button id="recruiting" class="buttonabout">Contact</button></p>
+                  <script type="text/javascript">
+                    document.getElementById("recruiting").onclick = function () {
+                        location.href = "contact.html";
+                    };
+                  </script>
+                </div>
+              </div>
+            </div>
 
             
     </body>

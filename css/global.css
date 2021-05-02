@@ -372,6 +372,83 @@ li {
   left: 0;
 }
 
+
+/*======================================
+//--//-->   The CSS of the about page - merged into the global.css
+======================================*/
+
+.columnabout {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/*Two different elements for the last container (the one of Quentin)*/
+/* Note for the issue, if you use float: left on the last column about, the shadow box dissapears but as soons as    */
+/* you put the container elsewhere, a shadow box appears !!*/
+  
+.lastcolumnabout {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.lastcardabout {
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+}
+
+
+.cardabout {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #011634;
+  color: white;
+}
+
+.containerabout {
+  padding: 0 25px;
+}
+
+.containerabout::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titleabout {
+  color: grey;
+}
+
+.buttonabout {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonabout:hover {
+  background-color: #555;
+}
+
+
+
 /*======================================
 //--//-->   SERVICES - CARD-C
 ======================================*/
